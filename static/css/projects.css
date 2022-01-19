@@ -1,0 +1,33 @@
+#projects{
+    background-color: black;
+}
+
+.projects-container{
+    height: 100VH;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 7%;
+    
+}
+
+.projects-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 4em;
+    grid-auto-flow: dense;
+    align-content: center;
+    background-color: var(--baseColor);
+    border-radius: var(--borderRadius);
+    padding: 8%;
+}
+
+.projects-cards li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(var(--secondaryColor));
+    background-image: linear-gradient(45deg, rgb(10 10 10), transparent);
+    padding: 17px 0px 17px 0px;
+    box-shadow: var(--boxShadow);
+}

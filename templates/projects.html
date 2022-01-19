@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/projects.css')}}" />
+{% endblock %}
+
+{% block body %}
+<section id="projects" >
+    <div class="projects-container" >
+        <ul class="projects-cards">
+            <li>
+                <img src="{{url_for('static', filename ='imgs/logo.png')}}" alt="">
+                <a href="https://github.com/ericmullally?tab=repositories">View code</a>
+            </li>
+            <li>
+                <img src="{{url_for('static', filename ='imgs/logo.png')}}" alt="">
+                <a href="https://github.com/ericmullally?tab=repositories">View code</a>
+            </li>
+            <li>
+                <img src="{{url_for('static', filename ='imgs/logo.png')}}" alt="">
+                <a href="https://github.com/ericmullally?tab=repositories">View code</a>
+            </li>
+            <li>
+                <img src="{{url_for('static', filename ='imgs/logo.png')}}" alt="">
+                <a href="https://github.com/ericmullally?tab=repositories">View code</a>
+            </li>
+            <li>
+                <img src="{{url_for('static', filename ='imgs/logo.png')}}" alt="">
+                <a href="https://github.com/ericmullally?tab=repositories">View code</a>
+            </li>
+        </ul>
+    </div>
+</section>
+{% endblock %}

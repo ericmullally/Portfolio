@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block head %}
+<link rel="stylesheet" href="{{url_for('static',filename='css/about.css')}}">
+{% endblock %} 
+{% block body %}
+<section id="about" >
+    <h1 class="about-heading">ABOUT</h1>
+    <div class="about-container">    
+        <p class="about-paragraph">
+            Hi, I'm Eric Mullally. I am a software developer. 
+            Solving problems with code has been a passion of mine for 3 years now. 
+            I have a passion for learning, I am organized, detail oriented and a hard worker who can work on his own or in a group setting. 
+            I started coding as a hobby, just doing web development for fun using vanilla JavaScript, HTML, and CSS.   
+        </p>
+        <p class="about-paragraph">
+            Then like every other programmer before me I started learning new frame works like react, angular etc.
+            I then moved on to desktop development where I began working with Python. 
+            When I needed speed for my applications, I learned some c#. 
+            Eventually I got some C++ under my belt along with some Java. But Python is still my favorite.
+        </p>
+        <p class="about-paragraph">
+            After about a year and a half of learning on my own I decided to give the structured learning approach a try.
+            I am now enrolled in a computer science course at WGU and have a projected graduation date of July 2022. 
+            I enjoy learning and am always up to try something new. I work hard because this isn't really work to me.
+        </p>
+    </div>
+
+</section>
+{% endblock %}

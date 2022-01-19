@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+    {% block head %}
+        <link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}" />
+    {% endblock %}
+
+    {% block body %}
+        <section id="hero" >
+            <div class="hero-img-container">  
+                <div class="cover"></div>
+                <div class="intro-container">
+                    <div class="clash" ></div>
+                    <div class= "text-container">
+                        <p>Hello, My name is Eric Mullally.</p>
+                        <p> I am a software developer with 3 years of experience.</p> 
+                        <p>I specialize in Python programming, and have experience with C#, Java, and C++.</p>
+                        <p> Check out some of my projects.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    {%endblock %}
+
+    
