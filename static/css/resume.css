@@ -10,6 +10,7 @@
     background-color: black;
     color: white;
     border-radius: var(--borderRadius);
+    box-shadow: var(--boxShadow);
 }
 
 .resume-container h3{

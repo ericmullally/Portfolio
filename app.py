@@ -1,5 +1,5 @@
-from cgitb import html
-from flask import Flask, render_template
+
+from flask import Flask, render_template, redirect
 
 app = Flask(__name__)
 
@@ -18,6 +18,11 @@ def projects():
 @app.route("/resume")
 def resume():
     return render_template("resume.html")
+
+@app.errorhandler(404)
+def not_found(e):
+    """Page not found."""
+    return redirect("/")
 
 if __name__ == "__main__":
     app.run(debug=True)

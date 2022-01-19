@@ -31,3 +31,7 @@
     padding: 17px 0px 17px 0px;
     box-shadow: var(--boxShadow);
 }
+
+.projects-cards h4{
+    color:white;
+}
