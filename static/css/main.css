@@ -28,7 +28,6 @@ body {
   left: 0;
   width: 100%;
   z-index: 5;
-  
 }
 
 .header-lines{
@@ -37,11 +36,17 @@ body {
   width: 100%;
   justify-content: space-around;
   align-items: center;
-  font-size: 25px;
+  font-size: 2em;
   padding: inherit;
   margin: 0;
 }
 
+.logo-container{
+  width: 32%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
 
 a:link, a:visited{
   text-decoration: none;
@@ -55,7 +60,12 @@ a:hover{
   border-bottom: 1px solid rgb(var(--secondaryColor));
 }
 
-/******************************************************************************* Navbar Section ***********************************************************************/
+.mobile-nav{
+  display:none;
+}
+ 
+
+/******************************************************************************* Footer Section ***********************************************************************/
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 #footer{
@@ -70,3 +80,68 @@ a:hover{
   font-style: italic;  
   list-style: none;
 }
+
+/******************************************************************************* Responsive Section ***********************************************************************/
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+@media screen and (max-width: 800px) {
+    .navbar{
+      display:none;
+    }
+
+    .mobile-nav{
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 5;
+    }
+
+    .mobile-header-lines{
+      background-color: rgba(145, 141, 141, .7);
+      display: flex;
+      list-style: none;
+      flex-direction: column;
+      width: 100%;
+      justify-content: space-around;
+      align-items: center;
+      font-size: 2em;
+      padding: inherit;
+      margin: 0;
+      transition: all ease .5s;
+    }
+
+    .slider {
+      text-align: center;
+      clip-path: polygon(0 -90%, 85% 0, 70% 90%, 30% 90%);
+      background-color: var(--baseColor);
+      width: 100%;
+      height: 43px;
+      font-size: 28px;
+      transform: translateY(43px);
+    }
+    .slider-btn{
+      width: 100%;
+      height: 100%;
+      font-size: 32px;
+    }
+
+    .closed-mobile-lines{
+      transform: translateY(-222px);
+    }
+
+    .open-mobile-lines{
+      transform: translateY(0px);
+    }
+
+    .logo-container{
+      width: 25%;
+    }
+    .mobile-header-logo{
+      width:100%;
+    }
+    
+}
+

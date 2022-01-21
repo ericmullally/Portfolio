@@ -17,10 +17,20 @@
           <ul class="header-lines">
               <li><a href="/">Home</a></li>
               <li><a href="/about">About</a></li>
-              <li><img class="header-logo" src="{{url_for('static', filename='imgs/logo.png')}}" alt="Name Eric Mullally"></li>
+              <li class="logo-container"><img class="header-logo" src="{{url_for('static', filename='imgs/logo.png')}}" alt="Name Eric Mullally"></li>
               <li> <a href="/projects">Projects</a></li>
               <li> <a href="/resume">Resume</a></li>
           </ul>
+      </header>
+      <header class="mobile-nav" >
+        <ul class="mobile-header-lines closed-mobile-lines">
+          <li class="logo-container"><img class="mobile-header-logo" src="{{url_for('static', filename='imgs/logo.png')}}" alt="Name Eric Mullally"></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li> <a href="/projects">Projects</a></li>
+          <li> <a href="/resume">Resume</a></li>
+          <li class="slider" ><button class="slider-btn"> &#8801</button></li>
+        </ul>
       </header>
     </section>
     {% block body %} {% endblock %} 
@@ -32,4 +42,6 @@
       </ul>
     </footer>
   </body>
+  <script src="../static/main.js">
+  </script>
 </html>
