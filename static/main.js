@@ -1,5 +1,6 @@
 const mobile_menu = document.getElementsByClassName("mobile-header-lines");
 const menu_btn = document.getElementsByClassName("slider-btn");
+const paralax_frame = document.getElementById("paralax-frame");
 
 menu_btn.item(0).addEventListener("click", toggleMenu);
 
@@ -17,4 +18,14 @@ function toggleMenu(e){
         menu.classList.add("closed-mobile-lines")
         btn.innerText = String.fromCharCode(8801) ;
     }
+}
+
+
+
+          
+
+paralax_frame.onload = function()
+{ 
+paralax_frame.style.height = paralax_frame.contentWindow.document.body.height + 'px';
+paralax_frame.style.width  = paralax_frame.contentWindow.document.body.width + 'px';
 }
